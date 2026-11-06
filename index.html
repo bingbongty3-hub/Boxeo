@@ -1,4 +1,6 @@
-<!DOCTYPE html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><link rel="manifest" href="manifest.json"><meta name="theme-color" content="#0e1a2b"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Boxing Champions"><link rel="apple-touch-icon" href="apple-touch-icon.png"><link rel="icon" href="icon-192.png"><title>Boxing Champions</title>
+<!DOCTYPE html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>Boxing Champions</title>
+<link rel="manifest" href="manifest.json"><meta name="theme-color" content="#0e1a2b"><link rel="apple-touch-icon" href="icon-192.png"><link rel="icon" href="icon-192.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Boxing">
+<script>if("serviceWorker" in navigator)addEventListener("load",function(){navigator.serviceWorker.register("sw.js")})</script>
 <link href="https://fonts.googleapis.com/css2?family=Anton&family=Barlow:wght@500;700&display=swap" rel="stylesheet">
 <style>
 :root{--bg:#0e1a2b;--red:#c1272d;--gold:#e0a526;--ink:#f2efe6;--pan:#16273f}
@@ -187,4 +189,4 @@ h+='<p><b>Peinado</b></p><div class="g">'+HR.map((n,i)=>`<button class="${S.hr==
 for(const s in IT){h+=`<p><b>${SL[s]}</b></p><div class="g">`;S.own[s].forEach(i=>h+=`<button class="${S.eq[s]==i?'p':''}" onclick="C(()=>S.eq['${s}']=${i})">${IT[s][i][0]}<br><small>+${IT[s][i][3]} ${ST[IT[s][i][2]]}</small></button>`);h+='</div>'}
 ui(h);U.style.background='linear-gradient(90deg,#0e1a2bf2 60%,#0e1a2b00)';U.style.paddingRight='34%'};
 try{init3()}catch(e){onerror(e.message+' [3D]','',0)}try{G.menu()}catch(e){onerror(e.message+' [menú]','',0)}
-</script><script>if('serviceWorker' in navigator)addEventListener('load',()=>navigator.serviceWorker.register('sw.js').catch(()=>{}))</script></body></html>
+</script></body></html>
